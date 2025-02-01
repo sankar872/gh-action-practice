@@ -14,30 +14,30 @@ jobs:
         run: npm ci
       - name: run the lint script
         run: npm run lint
-    test:
-      runs-on: ubuntu-latest
-      steps:
-        - name: get the code
-          uses: actions/checkout@v3
-        - name: install node
-          uses: actions/setup-node@v3
-          with:
-          node-version: 20
-        - name: install packages
-          run: npm ci
-        - name: run the tests
-          run: npm run test
-    build:
-      runs-on: ubuntu-latest
-      steps:
-        - name: get the code
-          uses: actions/checkout@v3
-        - name: install node
-          uses: actions/setup-node@v3
-          with:
-          node-version: 20
-        - name: install packages
-          run: npm ci
-        - name: build the app
-          run: npm run build
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get the code
+        uses: actions/checkout@v3
+      - name: install node
+        uses: actions/setup-node@v3
+        with:
+        node-version: 20
+      - name: install packages
+        run: npm ci
+      - name: run the tests
+        run: npm run test
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get the code
+        uses: actions/checkout@v3
+      - name: install node
+        uses: actions/setup-node@v3
+        with:
+        node-version: 20
+      - name: install packages
+        run: npm ci
+      - name: build the app
+        run: npm run build
 
