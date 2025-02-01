@@ -19,4 +19,4 @@ jobs:
       - name: build the app
         run: npm run build
       - name: deploy the app
-        echo: "application deployed"
+        run: echo "application deployed"
