@@ -22,7 +22,7 @@ jobs:
       - name: install node
         uses: actions/setup-node@v3
         with:
-        node-version: 20
+          node-version: 20
       - name: install packages
         run: npm ci
       - name: run the tests
@@ -35,7 +35,7 @@ jobs:
       - name: install node
         uses: actions/setup-node@v3
         with:
-        node-version: 20
+          node-version: 20
       - name: install packages
         run: npm ci
       - name: build the app
